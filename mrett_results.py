@@ -78,7 +78,7 @@ GC_html_graph = df_mretts['GC'][::-1].loc[:,'MRETT21':'MRETT26'].fillna(0).plot_
     return_html=True, show_figure=False
     )
 
-GC_html_table = df_mretts['GC'].to_html()
+GC_html_table = df_mretts['GC'].to_html(classes=['uk-table', 'uk-table-small', 'uk-table-hover', 'uk-table-divider'], border=0)
 
 # Stage Results 
 
@@ -109,10 +109,20 @@ for mrett in mrett_gids.keys():
             return_html=True, show_figure=False
             )
 
-        out_table_html = df_mretts[mrett][['#', 'Time', 'Diff', 'Points']].to_html()
+        out_table_html = df_mretts[mrett][['#', 'Time', 'Diff', 'Points']].to_html(classes=['uk-table', 'uk-table-small', 'uk-table-hover', 'uk-table-divider'], border=0)
 
-        stage_html_graphs = stage_html_graphs + '<h3>' + 'MRETT' + mrett + '</h3>' + '<p>' + out_html + '</p><p>' + out_table_html + '</p>'
+        stage_html_graphs = stage_html_graphs + '<hr>' + '<h3>' + 'MRETT' + mrett + '</h3>' + '<p>' + out_html + '</p><p>' + out_table_html + '</p>'
 
-print('<html><head><title>MRETT Series 2</title></head><body><h2>MRETT Series 2</h2>')
+print('''<html><head><title>MRETT Series 2</title>        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+
+        </head><body><h1>MRETT Series 2</h1>''')
 print(GC_html_graph, GC_html_table, stage_html_graphs)
 print('</body></html>')

@@ -1,0 +1,1351 @@
+<html><head><html><head><title>MRETT Series 2</title>        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+
+        </head><body><h1>MRETT Series 2</h1><hr><h2>MRETT GC</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="ca428eba-a090-46ba-9e1d-2ce3aed19047" data-root-id="2960"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"c13877a9-d268-49a8-a949-96956b1b8e0f":{"defs":[],"roots":{"references":[{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3086"}],"tooltips":[["Team","@__x__values_original"],["MRETT21","@{MRETT21}"],["MRETT22","@{MRETT22}"],["MRETT23","@{MRETT23}"],["MRETT24","@{MRETT24}"],["MRETT25","@{MRETT25}"],["MRETT26","@{MRETT26}"]]},"id":"3098","type":"HoverTool"},{"attributes":{},"id":"2963","type":"DataRange1d"},{"attributes":{},"id":"2967","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#ff7f0e"},"height":{"value":0.8},"left":{"expr":{"id":"2997"}},"line_alpha":{"value":0.1},"line_color":{"value":"#ff7f0e"},"line_width":{"value":2},"right":{"expr":{"id":"2998"}},"y":{"field":"__x__values"}},"id":"3025","type":"HBar"},{"attributes":{"source":{"id":"2959"}},"id":"3057","type":"CDSView"},{"attributes":{},"id":"3013","type":"AllLabels"},{"attributes":{"below":[{"id":"2971"}],"center":[{"id":"2974"},{"id":"2978"},{"id":"3021"}],"left":[{"id":"2975"}],"output_backend":"webgl","renderers":[{"id":"3010"},{"id":"3026"},{"id":"3041"},{"id":"3056"},{"id":"3071"},{"id":"3086"}],"sizing_mode":"scale_width","title":{"id":"2961"},"toolbar":{"id":"2986"},"width":1600,"x_range":{"id":"2963"},"x_scale":{"id":"2967"},"y_range":{"id":"2965"},"y_scale":{"id":"2969"}},"id":"2960","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.8},"left":{"expr":{"id":"2995"}},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"expr":{"id":"2996"}},"y":{"field":"__x__values"}},"id":"3008","type":"HBar"},{"attributes":{"source":{"id":"2959"}},"id":"3072","type":"CDSView"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23","MRETT24","MRETT25"]},"id":"3004","type":"Stack"},{"attributes":{"data_source":{"id":"2959"},"glyph":{"id":"3039"},"hover_glyph":null,"muted_glyph":null,"name":"MRETT23","nonselection_glyph":{"id":"3040"},"view":{"id":"3042"}},"id":"3041","type":"GlyphRenderer"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23","MRETT24","MRETT25","MRETT26"]},"id":"3006","type":"Stack"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#d62728"},"height":{"value":0.8},"left":{"expr":{"id":"3001"}},"line_alpha":{"value":0.6},"line_color":{"value":"#d62728"},"line_width":{"value":2},"right":{"expr":{"id":"3002"}},"y":{"field":"__x__values"}},"id":"3054","type":"HBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.8},"left":{"expr":{"id":"2995"}},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"expr":{"id":"2996"}},"y":{"field":"__x__values"}},"id":"3009","type":"HBar"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;Tricky Allsorts&#x27;, 1: &#x27;Les Watts&#x27;, 2: &#x27;RGT France 1&#x27;, 3: &#x27;Team Lou Too&#x27;, 4: &#x27;Westerlies&#x27;, 5: &#x27;WKG Renegades&#x27;, 6: &#x27;Westerley CC Purple&#x27;, 7: &#x27;KISS Racing Team 1&#x27;, 8: &#x27;eCKD 2&#x27;, 9: &#x27;Team Lou Racing Squad&#x27;, 10: &#x27;OTR Green&#x27;, 11: &#x27;OTR Blue&#x27;, 12: &#x27;Moon Riders&#x27;, 13: &#x27;OTR Black&#x27;, 14: &#x27;Pocomotion&#x27;, 15: &#x27;Rasio Racing&#x27;, 16: &#x27;The Pedalers&#x27;, 17: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"2993","type":"FuncTickFormatter"},{"attributes":{"data_source":{"id":"2959"},"glyph":{"id":"3054"},"hover_glyph":null,"muted_glyph":null,"name":"MRETT24","nonselection_glyph":{"id":"3055"},"view":{"id":"3057"}},"id":"3056","type":"GlyphRenderer"},{"attributes":{},"id":"3015","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"2975"},"dimension":1,"ticker":null},"id":"2978","type":"Grid"},{"attributes":{},"id":"2983","type":"ResetTool"},{"attributes":{"label":{"value":"MRETT25"},"renderers":[{"id":"3071"}]},"id":"3082","type":"LegendItem"},{"attributes":{"source":{"id":"2959"}},"id":"3042","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#d62728"},"height":{"value":0.8},"left":{"expr":{"id":"3001"}},"line_alpha":{"value":0.1},"line_color":{"value":"#d62728"},"line_width":{"value":2},"right":{"expr":{"id":"3002"}},"y":{"field":"__x__values"}},"id":"3055","type":"HBar"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23","MRETT24","MRETT25"]},"id":"3005","type":"Stack"},{"attributes":{"axis_label":"Points","formatter":{"id":"3015"},"major_label_policy":{"id":"3016"},"ticker":{"id":"2972"}},"id":"2971","type":"LinearAxis"},{"attributes":{"text":"MRETT Series 2 GC"},"id":"2961","type":"Title"},{"attributes":{"label":{"value":"MRETT22"},"renderers":[{"id":"3026"}]},"id":"3037","type":"LegendItem"},{"attributes":{"data_source":{"id":"2959"},"glyph":{"id":"3008"},"hover_glyph":null,"muted_glyph":null,"name":"MRETT21","nonselection_glyph":{"id":"3009"},"view":{"id":"3011"}},"id":"3010","type":"GlyphRenderer"},{"attributes":{"label":{"value":"MRETT24"},"renderers":[{"id":"3056"}]},"id":"3067","type":"LegendItem"},{"attributes":{"label":{"value":"MRETT26"},"renderers":[{"id":"3086"}]},"id":"3097","type":"LegendItem"},{"attributes":{"source":{"id":"2959"}},"id":"3011","type":"CDSView"},{"attributes":{"overlay":{"id":"2985"}},"id":"2981","type":"BoxZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"2985","type":"BoxAnnotation"},{"attributes":{},"id":"2982","type":"SaveTool"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"2979"},{"id":"2980"},{"id":"2981"},{"id":"2982"},{"id":"2983"},{"id":"2984"},{"id":"3098"}]},"id":"2986","type":"Toolbar"},{"attributes":{"fields":[]},"id":"2995","type":"Stack"},{"attributes":{"axis":{"id":"2971"},"ticker":null},"id":"2974","type":"Grid"},{"attributes":{"fields":["MRETT21"]},"id":"2996","type":"Stack"},{"attributes":{"label":{"value":"MRETT21"},"renderers":[{"id":"3010"}]},"id":"3022","type":"LegendItem"},{"attributes":{"fields":["MRETT21"]},"id":"2997","type":"Stack"},{"attributes":{"source":{"id":"2959"}},"id":"3027","type":"CDSView"},{"attributes":{},"id":"2969","type":"LinearScale"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23","MRETT24"]},"id":"3003","type":"Stack"},{"attributes":{},"id":"2965","type":"DataRange1d"},{"attributes":{"data_source":{"id":"2959"},"glyph":{"id":"3024"},"hover_glyph":null,"muted_glyph":null,"name":"MRETT22","nonselection_glyph":{"id":"3025"},"view":{"id":"3027"}},"id":"3026","type":"GlyphRenderer"},{"attributes":{"source":{"id":"2959"}},"id":"3087","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#8c564b"},"height":{"value":0.8},"left":{"expr":{"id":"3005"}},"line_alpha":{"value":0.6},"line_color":{"value":"#8c564b"},"line_width":{"value":2},"right":{"expr":{"id":"3006"}},"y":{"field":"__x__values"}},"id":"3084","type":"HBar"},{"attributes":{},"id":"3019","type":"Selection"},{"attributes":{"items":[{"id":"3022"},{"id":"3037"},{"id":"3052"},{"id":"3067"},{"id":"3082"},{"id":"3097"}],"location":"bottom_right"},"id":"3021","type":"Legend"},{"attributes":{"data_source":{"id":"2959"},"glyph":{"id":"3084"},"hover_glyph":null,"muted_glyph":null,"name":"MRETT26","nonselection_glyph":{"id":"3085"},"view":{"id":"3087"}},"id":"3086","type":"GlyphRenderer"},{"attributes":{},"id":"2980","type":"WheelZoomTool"},{"attributes":{"fields":["MRETT21","MRETT22"]},"id":"2999","type":"Stack"},{"attributes":{"axis_label":"Team","formatter":{"id":"2993"},"major_label_policy":{"id":"3013"},"ticker":{"id":"3100"}},"id":"2975","type":"LinearAxis"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23","MRETT24"]},"id":"3002","type":"Stack"},{"attributes":{"data_source":{"id":"2959"},"glyph":{"id":"3069"},"hover_glyph":null,"muted_glyph":null,"name":"MRETT25","nonselection_glyph":{"id":"3070"},"view":{"id":"3072"}},"id":"3071","type":"GlyphRenderer"},{"attributes":{},"id":"2972","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#9467bd"},"height":{"value":0.8},"left":{"expr":{"id":"3003"}},"line_alpha":{"value":0.6},"line_color":{"value":"#9467bd"},"line_width":{"value":2},"right":{"expr":{"id":"3004"}},"y":{"field":"__x__values"}},"id":"3069","type":"HBar"},{"attributes":{"label":{"value":"MRETT23"},"renderers":[{"id":"3041"}]},"id":"3052","type":"LegendItem"},{"attributes":{},"id":"2979","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#2ca02c"},"height":{"value":0.8},"left":{"expr":{"id":"2999"}},"line_alpha":{"value":0.1},"line_color":{"value":"#2ca02c"},"line_width":{"value":2},"right":{"expr":{"id":"3000"}},"y":{"field":"__x__values"}},"id":"3040","type":"HBar"},{"attributes":{},"id":"2984","type":"HelpTool"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23"]},"id":"3000","type":"Stack"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#8c564b"},"height":{"value":0.8},"left":{"expr":{"id":"3005"}},"line_alpha":{"value":0.1},"line_color":{"value":"#8c564b"},"line_width":{"value":2},"right":{"expr":{"id":"3006"}},"y":{"field":"__x__values"}},"id":"3085","type":"HBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#9467bd"},"height":{"value":0.8},"left":{"expr":{"id":"3003"}},"line_alpha":{"value":0.1},"line_color":{"value":"#9467bd"},"line_width":{"value":2},"right":{"expr":{"id":"3004"}},"y":{"field":"__x__values"}},"id":"3070","type":"HBar"},{"attributes":{},"id":"3016","type":"AllLabels"},{"attributes":{"fields":["MRETT21","MRETT22","MRETT23"]},"id":"3001","type":"Stack"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#2ca02c"},"height":{"value":0.8},"left":{"expr":{"id":"2999"}},"line_alpha":{"value":0.6},"line_color":{"value":"#2ca02c"},"line_width":{"value":2},"right":{"expr":{"id":"3000"}},"y":{"field":"__x__values"}},"id":"3039","type":"HBar"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]},"id":"3100","type":"FixedTicker"},{"attributes":{"fields":["MRETT21","MRETT22"]},"id":"2998","type":"Stack"},{"attributes":{},"id":"3020","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#ff7f0e"},"height":{"value":0.8},"left":{"expr":{"id":"2997"}},"line_alpha":{"value":0.6},"line_color":{"value":"#ff7f0e"},"line_width":{"value":2},"right":{"expr":{"id":"2998"}},"y":{"field":"__x__values"}},"id":"3024","type":"HBar"},{"attributes":{"data":{"MRETT21":{"__ndarray__":"AAAAAACgYEAAAAAAAAAAAAAAAAAAgGZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQF9AAAAAAAAgYEAAAAAAAMBiQAAAAAAAIGJAAAAAAAAgYUAAAAAAAKBhQAAAAAAAYGNAAAAAAAAAZEAAAAAAAKBkQAAAAAAA4GVAAAAAAADAZ0AAAAAAAEBlQAAAAAAAAGlA","dtype":"float64","order":"little","shape":[18]},"MRETT22":{"__ndarray__":"AAAAAAAAAAAAAAAAAMBiQAAAAAAAYGNAAAAAAAAAAAAAAAAAAEBeQAAAAAAAQF9AAAAAAAAgYEAAAAAAAOBlQAAAAAAAoGBAAAAAAAAgYkAAAAAAACBhQAAAAAAAQGVAAAAAAACgYUAAAAAAAABkQAAAAAAAoGRAAAAAAACAZkAAAAAAAMBnQAAAAAAAAGlA","dtype":"float64","order":"little","shape":[18]},"MRETT23":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBgQAAAAAAAoGFAAAAAAACgYEAAAAAAAGBjQAAAAAAAIGFAAAAAAADAYkAAAAAAAKBkQAAAAAAAIGJAAAAAAAAAZEAAAAAAAOBlQAAAAAAAQGVAAAAAAACAZkAAAAAAAMBnQAAAAAAAAGlA","dtype":"float64","order":"little","shape":[18]},"MRETT24":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgYEAAAAAAAEBfQAAAAAAAIGBAAAAAAACgYUAAAAAAAEBlQAAAAAAAIGFAAAAAAABgY0AAAAAAAMBiQAAAAAAAIGJAAAAAAAAAZEAAAAAAAOBlQAAAAAAAoGRAAAAAAACAZkAAAAAAAMBnQAAAAAAAAGlA","dtype":"float64","order":"little","shape":[18]},"MRETT25":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgYEAAAAAAACBgQAAAAAAAAAAAAAAAAAAgYUAAAAAAAKBkQAAAAAAAoGFAAAAAAAAgYkAAAAAAAGBjQAAAAAAAwGJAAAAAAABAZUAAAAAAAABkQAAAAAAA4GVAAAAAAADAZ0AAAAAAAIBmQAAAAAAAAGlA","dtype":"float64","order":"little","shape":[18]},"MRETT26":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgYUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgYkAAAAAAAAAAAAAAAAAAoGFAAAAAAADAYkAAAAAAAABkQAAAAAAAYGNAAAAAAACgZEAAAAAAAOBlQAAAAAAAQGVAAAAAAACAZkAAAAAAAMBnQAAAAAAAAGlA","dtype":"float64","order":"little","shape":[18]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],"__x__values_original":["Tricky Allsorts","Les Watts","RGT France 1","Team Lou Too","Westerlies","WKG Renegades","Westerley CC Purple","KISS Racing Team 1","eCKD 2","Team Lou Racing Squad","OTR Green","OTR Blue","Moon Riders","OTR Black","Pocomotion","Rasio Racing","The Pedalers","eCKD 1"]},"selected":{"id":"3019"},"selection_policy":{"id":"3020"}},"id":"2959","type":"ColumnDataSource"}],"root_ids":["2960"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"c13877a9-d268-49a8-a949-96956b1b8e0f","root_ids":["2960"],"roots":{"2960":"ca428eba-a090-46ba-9e1d-2ce3aed19047"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Total</th>
+      <th>MRETT21</th>
+      <th>MRETT22</th>
+      <th>MRETT23</th>
+      <th>MRETT24</th>
+      <th>MRETT25</th>
+      <th>MRETT26</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1</td>
+      <td>1200</td>
+      <td>200.0</td>
+      <td>200.0</td>
+      <td>200.0</td>
+      <td>200.0</td>
+      <td>200.0</td>
+      <td>200.0</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>2</td>
+      <td>1110</td>
+      <td>170.0</td>
+      <td>190.0</td>
+      <td>190.0</td>
+      <td>190.0</td>
+      <td>180.0</td>
+      <td>190.0</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>3</td>
+      <td>1100</td>
+      <td>190.0</td>
+      <td>180.0</td>
+      <td>180.0</td>
+      <td>180.0</td>
+      <td>190.0</td>
+      <td>180.0</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>4</td>
+      <td>1020</td>
+      <td>175.0</td>
+      <td>165.0</td>
+      <td>170.0</td>
+      <td>165.0</td>
+      <td>175.0</td>
+      <td>170.0</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>5</td>
+      <td>1010</td>
+      <td>165.0</td>
+      <td>160.0</td>
+      <td>175.0</td>
+      <td>175.0</td>
+      <td>160.0</td>
+      <td>175.0</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>6</td>
+      <td>956</td>
+      <td>160.0</td>
+      <td>141.0</td>
+      <td>160.0</td>
+      <td>160.0</td>
+      <td>170.0</td>
+      <td>165.0</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>7</td>
+      <td>920</td>
+      <td>155.0</td>
+      <td>170.0</td>
+      <td>145.0</td>
+      <td>145.0</td>
+      <td>150.0</td>
+      <td>155.0</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>8</td>
+      <td>908</td>
+      <td>141.0</td>
+      <td>137.0</td>
+      <td>165.0</td>
+      <td>150.0</td>
+      <td>155.0</td>
+      <td>160.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>9</td>
+      <td>882</td>
+      <td>137.0</td>
+      <td>145.0</td>
+      <td>150.0</td>
+      <td>155.0</td>
+      <td>145.0</td>
+      <td>150.0</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>10</td>
+      <td>834</td>
+      <td>145.0</td>
+      <td>133.0</td>
+      <td>137.0</td>
+      <td>137.0</td>
+      <td>141.0</td>
+      <td>141.0</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>11</td>
+      <td>815</td>
+      <td>150.0</td>
+      <td>175.0</td>
+      <td>155.0</td>
+      <td>170.0</td>
+      <td>165.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>12</td>
+      <td>814</td>
+      <td>129.0</td>
+      <td>129.0</td>
+      <td>133.0</td>
+      <td>141.0</td>
+      <td>137.0</td>
+      <td>145.0</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>13</td>
+      <td>520</td>
+      <td>125.0</td>
+      <td>125.0</td>
+      <td>141.0</td>
+      <td>129.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Westerlies</th>
+      <td>14</td>
+      <td>504</td>
+      <td>NaN</td>
+      <td>121.0</td>
+      <td>129.0</td>
+      <td>125.0</td>
+      <td>129.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Team Lou Too</th>
+      <td>15</td>
+      <td>403</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>133.0</td>
+      <td>133.0</td>
+      <td>137.0</td>
+    </tr>
+    <tr>
+      <th>RGT France 1</th>
+      <td>16</td>
+      <td>335</td>
+      <td>180.0</td>
+      <td>155.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Les Watts</th>
+      <td>17</td>
+      <td>150</td>
+      <td>NaN</td>
+      <td>150.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Tricky Allsorts</th>
+      <td>18</td>
+      <td>133</td>
+      <td>133.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><hr><h2>MRETT21</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="5459bab4-23a7-4ed3-a80d-8c9e5cf5c39e" data-root-id="3171"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"3d610e36-1218-44c4-a742-d4667b0faf5e":{"defs":[],"roots":{"references":[{"attributes":{"axis":{"id":"3182"},"ticker":null},"id":"3185","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3206"}}},"id":"3208","type":"HBar"},{"attributes":{"below":[{"id":"3182"}],"center":[{"id":"3185"},{"id":"3189"},{"id":"3221"}],"left":[{"id":"3186"}],"output_backend":"webgl","renderers":[{"id":"3210"}],"sizing_mode":"scale_width","title":{"id":"3172"},"toolbar":{"id":"3197"},"width":1600,"x_range":{"id":"3174"},"x_scale":{"id":"3178"},"y_range":{"id":"3176"},"y_scale":{"id":"3180"}},"id":"3171","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3178","type":"LinearScale"},{"attributes":{"data_source":{"id":"3170"},"glyph":{"id":"3208"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3209"},"view":{"id":"3211"}},"id":"3210","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3196","type":"BoxAnnotation"},{"attributes":{},"id":"3183","type":"BasicTicker"},{"attributes":{"click_policy":"hide","items":[{"id":"3222"}]},"id":"3221","type":"Legend"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3210"}],"tooltips":"&lt;h2&gt; #@{#} \\n                                @{Team Name} &lt;/h2&gt;\\n                                &lt;h3&gt; Time: @{Time} &lt;/h3&gt;"},"id":"3223","type":"HoverTool"},{"attributes":{"range":{"id":"3176"}},"id":"3206","type":"Dodge"},{"attributes":{"label":{"value":" Time in Minutes"},"renderers":[{"id":"3210"}]},"id":"3222","type":"LegendItem"},{"attributes":{"axis_label":"Time (Minutes)","formatter":{"id":"3215"},"major_label_policy":{"id":"3216"},"ticker":{"id":"3183"}},"id":"3182","type":"LinearAxis"},{"attributes":{"source":{"id":"3170"}},"id":"3211","type":"CDSView"},{"attributes":{},"id":"3194","type":"ResetTool"},{"attributes":{},"id":"3176","type":"DataRange1d"},{"attributes":{},"id":"3180","type":"LinearScale"},{"attributes":{},"id":"3213","type":"AllLabels"},{"attributes":{},"id":"3215","type":"BasicTickFormatter"},{"attributes":{"axis_label":"Team","formatter":{"id":"3204"},"major_label_policy":{"id":"3213"},"ticker":{"id":"3225"}},"id":"3186","type":"LinearAxis"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;WKG Renegades&#x27;, 1: &#x27;Westerley CC Purple&#x27;, 2: &#x27;Tricky Allsorts&#x27;, 3: &#x27;Team Lou Racing Squad&#x27;, 4: &#x27;OTR Green&#x27;, 5: &#x27;eCKD 2&#x27;, 6: &#x27;KISS Racing Team 1&#x27;, 7: &#x27;OTR Blue&#x27;, 8: &#x27;Moon Riders&#x27;, 9: &#x27;OTR Black&#x27;, 10: &#x27;The Pedalers&#x27;, 11: &#x27;Pocomotion&#x27;, 12: &#x27;RGT France 1&#x27;, 13: &#x27;Rasio Racing&#x27;, 14: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"3204","type":"FuncTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3206"}}},"id":"3209","type":"HBar"},{"attributes":{},"id":"3191","type":"WheelZoomTool"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]},"id":"3225","type":"FixedTicker"},{"attributes":{},"id":"3193","type":"SaveTool"},{"attributes":{},"id":"3220","type":"UnionRenderers"},{"attributes":{},"id":"3219","type":"Selection"},{"attributes":{"text":"MRETT21"},"id":"3172","type":"Title"},{"attributes":{},"id":"3174","type":"DataRange1d"},{"attributes":{"overlay":{"id":"3196"}},"id":"3192","type":"BoxZoomTool"},{"attributes":{},"id":"3190","type":"PanTool"},{"attributes":{},"id":"3195","type":"HelpTool"},{"attributes":{"axis":{"id":"3186"},"dimension":1,"ticker":null},"id":"3189","type":"Grid"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"3190"},{"id":"3191"},{"id":"3192"},{"id":"3193"},{"id":"3194"},{"id":"3195"},{"id":"3223"}]},"id":"3197","type":"Toolbar"},{"attributes":{"data":{"#":[15,14,13,12,11,10,9,8,7,6,5,4,3,2,1],"Team Name":["WKG Renegades","Westerley CC Purple","Tricky Allsorts","Team Lou Racing Squad","OTR Green","eCKD 2","KISS Racing Team 1","OTR Blue","Moon Riders","OTR Black","The Pedalers","Pocomotion","RGT France 1","Rasio Racing","eCKD 1"],"Time":["00:38:38.7","00:37:46.2","00:37:44.0","00:37:16.5","00:36:08.0","00:36:03.9","00:36:00.8","00:35:57.6","00:35:38.2","00:35:18.2","00:35:05.2","00:35:02.8","00:34:50.0","00:33:52.7","00:33:47.1"],"Time in Minutes":{"__ndarray__":"w/UoXI9SQ0DD9Shcj+JCQN7d3d3d3UJAMzMzMzOjQkARERERERFCQLkehetRCEJAgk4b6LQBQkB7FK5H4fpBQLLkF0t+0UFABzptoNOmQUBMfrHkF4tBQMaSXyz5hUFAq6qqqqpqQUCh0wY6bfBAQBWuR+F65EBA","dtype":"float64","order":"little","shape":[15]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],"__x__values_original":["WKG Renegades","Westerley CC Purple","Tricky Allsorts","Team Lou Racing Squad","OTR Green","eCKD 2","KISS Racing Team 1","OTR Blue","Moon Riders","OTR Black","The Pedalers","Pocomotion","RGT France 1","Rasio Racing","eCKD 1"]},"selected":{"id":"3219"},"selection_policy":{"id":"3220"}},"id":"3170","type":"ColumnDataSource"},{"attributes":{},"id":"3216","type":"AllLabels"}],"root_ids":["3171"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"3d610e36-1218-44c4-a742-d4667b0faf5e","root_ids":["3171"],"roots":{"3171":"5459bab4-23a7-4ed3-a80d-8c9e5cf5c39e"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Time</th>
+      <th>Diff</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1</td>
+      <td>00:33:47.1</td>
+      <td>NaN</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>2</td>
+      <td>00:33:52.7</td>
+      <td>+ 0:00:05.6</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <th>RGT France 1</th>
+      <td>3</td>
+      <td>00:34:50.0</td>
+      <td>+ 0:01:02.9</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>4</td>
+      <td>00:35:02.8</td>
+      <td>+ 0:01:15.7</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>5</td>
+      <td>00:35:05.2</td>
+      <td>+ 0:01:18.1</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>6</td>
+      <td>00:35:18.2</td>
+      <td>+ 0:01:31.1</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>7</td>
+      <td>00:35:38.2</td>
+      <td>+ 0:01:51.1</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>8</td>
+      <td>00:35:57.6</td>
+      <td>+ 0:02:10.5</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>9</td>
+      <td>00:36:00.8</td>
+      <td>+ 0:02:13.7</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>10</td>
+      <td>00:36:03.9</td>
+      <td>+ 0:02:16.8</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>11</td>
+      <td>00:36:08.0</td>
+      <td>+ 0:02:20.9</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>12</td>
+      <td>00:37:16.5</td>
+      <td>+ 0:03:29.4</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <th>Tricky Allsorts</th>
+      <td>13</td>
+      <td>00:37:44.0</td>
+      <td>+ 0:03:56.9</td>
+      <td>133</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>14</td>
+      <td>00:37:46.2</td>
+      <td>+ 0:03:59.1</td>
+      <td>129</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>15</td>
+      <td>00:38:38.7</td>
+      <td>+ 0:04:51.6</td>
+      <td>125</td>
+    </tr>
+  </tbody>
+</table><hr><h2>MRETT22</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="b1ab58b7-c042-4214-9536-0b46f868af5e" data-root-id="3296"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"e3543601-b0a5-439e-8a2d-a227f5220f68":{"defs":[],"roots":{"references":[{"attributes":{},"id":"3338","type":"AllLabels"},{"attributes":{"axis":{"id":"3311"},"dimension":1,"ticker":null},"id":"3314","type":"Grid"},{"attributes":{},"id":"3340","type":"BasicTickFormatter"},{"attributes":{"axis_label":"Team","formatter":{"id":"3329"},"major_label_policy":{"id":"3338"},"ticker":{"id":"3350"}},"id":"3311","type":"LinearAxis"},{"attributes":{},"id":"3341","type":"AllLabels"},{"attributes":{"axis":{"id":"3307"},"ticker":null},"id":"3310","type":"Grid"},{"attributes":{},"id":"3315","type":"PanTool"},{"attributes":{"data_source":{"id":"3295"},"glyph":{"id":"3333"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3334"},"view":{"id":"3336"}},"id":"3335","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3331"}}},"id":"3334","type":"HBar"},{"attributes":{},"id":"3318","type":"SaveTool"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"3315"},{"id":"3316"},{"id":"3317"},{"id":"3318"},{"id":"3319"},{"id":"3320"},{"id":"3348"}]},"id":"3322","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3331"}}},"id":"3333","type":"HBar"},{"attributes":{},"id":"3319","type":"ResetTool"},{"attributes":{},"id":"3316","type":"WheelZoomTool"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]},"id":"3350","type":"FixedTicker"},{"attributes":{"overlay":{"id":"3321"}},"id":"3317","type":"BoxZoomTool"},{"attributes":{},"id":"3308","type":"BasicTicker"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3321","type":"BoxAnnotation"},{"attributes":{"click_policy":"hide","items":[{"id":"3347"}]},"id":"3346","type":"Legend"},{"attributes":{"source":{"id":"3295"}},"id":"3336","type":"CDSView"},{"attributes":{},"id":"3320","type":"HelpTool"},{"attributes":{"data":{"#":{"__ndarray__":"AAAAAAAA+H8AAAAAAAAwQAAAAAAAAC5AAAAAAAAALEAAAAAAAAAqQAAAAAAAAChAAAAAAAAAJkAAAAAAAAAkQAAAAAAAACJAAAAAAAAAIEAAAAAAAAAcQAAAAAAAABhAAAAAAAAAFEAAAAAAAAAQQAAAAAAAAAhAAAAAAAAAAEAAAAAAAADwPw==","dtype":"float64","order":"little","shape":[17]},"Team Name":["NaN","Westerlies","WKG Renegades","Westerley CC Purple","eCKD 2","OTR Green","Moon Riders","Team Lou Racing Squad","Les Watts","RGT France 1","OTR Black","Pocomotion","OTR Blue","KISS Racing Team 1","Rasio Racing","The Pedalers","eCKD 1"],"Time":["NaN","00:40:15.4","00:36:45.4","00:36:38.9","00:35:58.7","00:35:25.6","00:35:03.8","00:34:59.8","00:34:55.3","00:34:52.0","00:34:43.1","00:34:39.1","00:34:28.8","00:34:17.4","00:33:53.8","00:32:58.2","00:31:57.7"],"Time in Minutes":{"__ndarray__":"AAAAAAAA+H9Bpw102iBEQEGnDXTaYEJAY8kvlvxSQkBuoNMGOv1BQDbQaQOdtkFA6bSBThuIQUBgLPnFkn9BQMaSXyz5dUFA7+7u7u5uQUCMJb9Y8ltBQAOdNtBpU0FAPgrXo3A9QUCF61G4HiVBQJNfLPnF8kBAXI/C9Sh8QECW/GLJL/Y/QA==","dtype":"float64","order":"little","shape":[17]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"__x__values_original":["NaN","Westerlies","WKG Renegades","Westerley CC Purple","eCKD 2","OTR Green","Moon Riders","Team Lou Racing Squad","Les Watts","RGT France 1","OTR Black","Pocomotion","OTR Blue","KISS Racing Team 1","Rasio Racing","The Pedalers","eCKD 1"]},"selected":{"id":"3344"},"selection_policy":{"id":"3345"}},"id":"3295","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"3307"}],"center":[{"id":"3310"},{"id":"3314"},{"id":"3346"}],"left":[{"id":"3311"}],"output_backend":"webgl","renderers":[{"id":"3335"}],"sizing_mode":"scale_width","title":{"id":"3297"},"toolbar":{"id":"3322"},"width":1600,"x_range":{"id":"3299"},"x_scale":{"id":"3303"},"y_range":{"id":"3301"},"y_scale":{"id":"3305"}},"id":"3296","subtype":"Figure","type":"Plot"},{"attributes":{"range":{"id":"3301"}},"id":"3331","type":"Dodge"},{"attributes":{"axis_label":"Time (Minutes)","formatter":{"id":"3340"},"major_label_policy":{"id":"3341"},"ticker":{"id":"3308"}},"id":"3307","type":"LinearAxis"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;nan&#x27;, 1: &#x27;Westerlies&#x27;, 2: &#x27;WKG Renegades&#x27;, 3: &#x27;Westerley CC Purple&#x27;, 4: &#x27;eCKD 2&#x27;, 5: &#x27;OTR Green&#x27;, 6: &#x27;Moon Riders&#x27;, 7: &#x27;Team Lou Racing Squad&#x27;, 8: &#x27;Les Watts&#x27;, 9: &#x27;RGT France 1&#x27;, 10: &#x27;OTR Black&#x27;, 11: &#x27;Pocomotion&#x27;, 12: &#x27;OTR Blue&#x27;, 13: &#x27;KISS Racing Team 1&#x27;, 14: &#x27;Rasio Racing&#x27;, 15: &#x27;The Pedalers&#x27;, 16: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"3329","type":"FuncTickFormatter"},{"attributes":{"label":{"value":" Time in Minutes"},"renderers":[{"id":"3335"}]},"id":"3347","type":"LegendItem"},{"attributes":{},"id":"3345","type":"UnionRenderers"},{"attributes":{},"id":"3344","type":"Selection"},{"attributes":{},"id":"3305","type":"LinearScale"},{"attributes":{},"id":"3299","type":"DataRange1d"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3335"}],"tooltips":"&lt;h2&gt; #@{#} \\n                                @{Team Name} &lt;/h2&gt;\\n                                &lt;h3&gt; Time: @{Time} &lt;/h3&gt;"},"id":"3348","type":"HoverTool"},{"attributes":{"text":"MRETT22"},"id":"3297","type":"Title"},{"attributes":{},"id":"3301","type":"DataRange1d"},{"attributes":{},"id":"3303","type":"LinearScale"}],"root_ids":["3296"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"e3543601-b0a5-439e-8a2d-a227f5220f68","root_ids":["3296"],"roots":{"3296":"b1ab58b7-c042-4214-9536-0b46f868af5e"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Time</th>
+      <th>Diff</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1.0</td>
+      <td>00:31:57.7</td>
+      <td>NaN</td>
+      <td>200.0</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>2.0</td>
+      <td>00:32:58.2</td>
+      <td>+ 0:01:00.5</td>
+      <td>190.0</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>3.0</td>
+      <td>00:33:53.8</td>
+      <td>+ 0:01:56.1</td>
+      <td>180.0</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>4.0</td>
+      <td>00:34:17.4</td>
+      <td>+ 0:02:19.7</td>
+      <td>175.0</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>5.0</td>
+      <td>00:34:28.8</td>
+      <td>+ 0:02:31.1</td>
+      <td>170.0</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>6.0</td>
+      <td>00:34:39.1</td>
+      <td>+ 0:02:41.4</td>
+      <td>165.0</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>7.0</td>
+      <td>00:34:43.1</td>
+      <td>+ 0:02:45.4</td>
+      <td>160.0</td>
+    </tr>
+    <tr>
+      <th>RGT France 1</th>
+      <td>8.0</td>
+      <td>00:34:52.0</td>
+      <td>+ 0:02:54.3</td>
+      <td>155.0</td>
+    </tr>
+    <tr>
+      <th>Les Watts</th>
+      <td>9.0</td>
+      <td>00:34:55.3</td>
+      <td>+ 0:02:57.6</td>
+      <td>150.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>10.0</td>
+      <td>00:34:59.8</td>
+      <td>+ 0:03:02.1</td>
+      <td>145.0</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>11.0</td>
+      <td>00:35:03.8</td>
+      <td>+ 0:03:06.1</td>
+      <td>141.0</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>12.0</td>
+      <td>00:35:25.6</td>
+      <td>+ 0:03:27.9</td>
+      <td>137.0</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>13.0</td>
+      <td>00:35:58.7</td>
+      <td>+ 0:04:01.0</td>
+      <td>133.0</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>14.0</td>
+      <td>00:36:38.9</td>
+      <td>+ 0:04:41.2</td>
+      <td>129.0</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>15.0</td>
+      <td>00:36:45.4</td>
+      <td>+ 0:04:47.7</td>
+      <td>125.0</td>
+    </tr>
+    <tr>
+      <th>Westerlies</th>
+      <td>16.0</td>
+      <td>00:40:15.4</td>
+      <td>+ 0:08:17.7</td>
+      <td>121.0</td>
+    </tr>
+    <tr>
+      <th>NaN</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><hr><h2>MRETT23</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="97244711-40a7-4b6d-8daa-8f244683c4aa" data-root-id="3421"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"7a0071da-5196-4895-8489-5bcad9602186":{"defs":[],"roots":{"references":[{"attributes":{},"id":"3465","type":"BasicTickFormatter"},{"attributes":{},"id":"3441","type":"WheelZoomTool"},{"attributes":{},"id":"3466","type":"AllLabels"},{"attributes":{},"id":"3433","type":"BasicTicker"},{"attributes":{"range":{"id":"3426"}},"id":"3456","type":"Dodge"},{"attributes":{},"id":"3430","type":"LinearScale"},{"attributes":{},"id":"3445","type":"HelpTool"},{"attributes":{},"id":"3469","type":"Selection"},{"attributes":{},"id":"3440","type":"PanTool"},{"attributes":{"axis_label":"Time (Minutes)","formatter":{"id":"3465"},"major_label_policy":{"id":"3466"},"ticker":{"id":"3433"}},"id":"3432","type":"LinearAxis"},{"attributes":{},"id":"3470","type":"UnionRenderers"},{"attributes":{"overlay":{"id":"3446"}},"id":"3442","type":"BoxZoomTool"},{"attributes":{},"id":"3443","type":"SaveTool"},{"attributes":{},"id":"3444","type":"ResetTool"},{"attributes":{"below":[{"id":"3432"}],"center":[{"id":"3435"},{"id":"3439"},{"id":"3471"}],"left":[{"id":"3436"}],"output_backend":"webgl","renderers":[{"id":"3460"}],"sizing_mode":"scale_width","title":{"id":"3422"},"toolbar":{"id":"3447"},"width":1600,"x_range":{"id":"3424"},"x_scale":{"id":"3428"},"y_range":{"id":"3426"},"y_scale":{"id":"3430"}},"id":"3421","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3426","type":"DataRange1d"},{"attributes":{},"id":"3428","type":"LinearScale"},{"attributes":{"text":"MRETT23"},"id":"3422","type":"Title"},{"attributes":{"data":{"#":[14,13,12,11,10,9,8,7,6,5,4,3,2,1],"Team Name":["Westerlies","Westerley CC Purple","eCKD 2","WKG Renegades","OTR Blue","Team Lou Racing Squad","KISS Racing Team 1","Moon Riders","OTR Green","Pocomotion","OTR Black","Rasio Racing","The Pedalers","eCKD 1"],"Time":["00:35:12.9","00:32:56.6","00:32:45.4","00:32:35.2","00:32:17.0","00:32:04.1","00:31:43.8","00:31:18.9","00:31:12.3","00:30:44.0","00:30:36.6","00:29:58.7","00:29:49.9","00:29:31.6"],"Time in Minutes":{"__ndarray__":"7FG4HoWbQUBZ8oslv3hAQEGnDXTaYEBAS36x5BdLQEBFRERERCRAQFnyiyW/CEBAfBSuR+G6P0BxPQrXo1A/QBWuR+F6ND9Avbu7u7u7PkBdj8L1KJw+QNtApw10+j1AtYFOG+jUPUAHOm2g04Y9QA==","dtype":"float64","order":"little","shape":[14]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],"__x__values_original":["Westerlies","Westerley CC Purple","eCKD 2","WKG Renegades","OTR Blue","Team Lou Racing Squad","KISS Racing Team 1","Moon Riders","OTR Green","Pocomotion","OTR Black","Rasio Racing","The Pedalers","eCKD 1"]},"selected":{"id":"3469"},"selection_policy":{"id":"3470"}},"id":"3420","type":"ColumnDataSource"},{"attributes":{"source":{"id":"3420"}},"id":"3461","type":"CDSView"},{"attributes":{"label":{"value":" Time in Minutes"},"renderers":[{"id":"3460"}]},"id":"3472","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3456"}}},"id":"3459","type":"HBar"},{"attributes":{"axis_label":"Team","formatter":{"id":"3454"},"major_label_policy":{"id":"3463"},"ticker":{"id":"3475"}},"id":"3436","type":"LinearAxis"},{"attributes":{"click_policy":"hide","items":[{"id":"3472"}]},"id":"3471","type":"Legend"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13]},"id":"3475","type":"FixedTicker"},{"attributes":{"axis":{"id":"3436"},"dimension":1,"ticker":null},"id":"3439","type":"Grid"},{"attributes":{},"id":"3424","type":"DataRange1d"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3460"}],"tooltips":"&lt;h2&gt; #@{#} \\n                                @{Team Name} &lt;/h2&gt;\\n                                &lt;h3&gt; Time: @{Time} &lt;/h3&gt;"},"id":"3473","type":"HoverTool"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;Westerlies&#x27;, 1: &#x27;Westerley CC Purple&#x27;, 2: &#x27;eCKD 2&#x27;, 3: &#x27;WKG Renegades&#x27;, 4: &#x27;OTR Blue&#x27;, 5: &#x27;Team Lou Racing Squad&#x27;, 6: &#x27;KISS Racing Team 1&#x27;, 7: &#x27;Moon Riders&#x27;, 8: &#x27;OTR Green&#x27;, 9: &#x27;Pocomotion&#x27;, 10: &#x27;OTR Black&#x27;, 11: &#x27;Rasio Racing&#x27;, 12: &#x27;The Pedalers&#x27;, 13: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"3454","type":"FuncTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3446","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"3420"},"glyph":{"id":"3458"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3459"},"view":{"id":"3461"}},"id":"3460","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3456"}}},"id":"3458","type":"HBar"},{"attributes":{},"id":"3463","type":"AllLabels"},{"attributes":{"axis":{"id":"3432"},"ticker":null},"id":"3435","type":"Grid"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"3440"},{"id":"3441"},{"id":"3442"},{"id":"3443"},{"id":"3444"},{"id":"3445"},{"id":"3473"}]},"id":"3447","type":"Toolbar"}],"root_ids":["3421"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"7a0071da-5196-4895-8489-5bcad9602186","root_ids":["3421"],"roots":{"3421":"97244711-40a7-4b6d-8daa-8f244683c4aa"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Time</th>
+      <th>Diff</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1</td>
+      <td>00:29:31.6</td>
+      <td>NaN</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>2</td>
+      <td>00:29:49.9</td>
+      <td>+ 0:00:18.3</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>3</td>
+      <td>00:29:58.7</td>
+      <td>+ 0:00:27.1</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>4</td>
+      <td>00:30:36.6</td>
+      <td>+ 0:01:05.0</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>5</td>
+      <td>00:30:44.0</td>
+      <td>+ 0:01:12.4</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>6</td>
+      <td>00:31:12.3</td>
+      <td>+ 0:01:40.7</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>7</td>
+      <td>00:31:18.9</td>
+      <td>+ 0:01:47.3</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>8</td>
+      <td>00:31:43.8</td>
+      <td>+ 0:02:12.2</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>9</td>
+      <td>00:32:04.1</td>
+      <td>+ 0:02:32.5</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>10</td>
+      <td>00:32:17.0</td>
+      <td>+ 0:02:45.4</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>11</td>
+      <td>00:32:35.2</td>
+      <td>+ 0:03:03.6</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>12</td>
+      <td>00:32:45.4</td>
+      <td>+ 0:03:13.8</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>13</td>
+      <td>00:32:56.6</td>
+      <td>+ 0:03:25.0</td>
+      <td>133</td>
+    </tr>
+    <tr>
+      <th>Westerlies</th>
+      <td>14</td>
+      <td>00:35:12.9</td>
+      <td>+ 0:05:41.3</td>
+      <td>129</td>
+    </tr>
+  </tbody>
+</table><hr><h2>MRETT24</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="4f75705b-273a-4adc-b1b2-21c5fd7845bb" data-root-id="3546"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"6f491117-97a2-48e2-bd56-0c4ffe9aa104":{"defs":[],"roots":{"references":[{"attributes":{"source":{"id":"3545"}},"id":"3586","type":"CDSView"},{"attributes":{},"id":"3594","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3581"}}},"id":"3584","type":"HBar"},{"attributes":{},"id":"3595","type":"UnionRenderers"},{"attributes":{"click_policy":"hide","items":[{"id":"3597"}]},"id":"3596","type":"Legend"},{"attributes":{},"id":"3588","type":"AllLabels"},{"attributes":{"below":[{"id":"3557"}],"center":[{"id":"3560"},{"id":"3564"},{"id":"3596"}],"left":[{"id":"3561"}],"output_backend":"webgl","renderers":[{"id":"3585"}],"sizing_mode":"scale_width","title":{"id":"3547"},"toolbar":{"id":"3572"},"width":1600,"x_range":{"id":"3549"},"x_scale":{"id":"3553"},"y_range":{"id":"3551"},"y_scale":{"id":"3555"}},"id":"3546","subtype":"Figure","type":"Plot"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]},"id":"3600","type":"FixedTicker"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;RGT France 1&#x27;, 1: &#x27;Les Watts&#x27;, 2: &#x27;Westerlies&#x27;, 3: &#x27;WKG Renegades&#x27;, 4: &#x27;Team Lou Too&#x27;, 5: &#x27;eCKD 2&#x27;, 6: &#x27;Westerley CC Purple&#x27;, 7: &#x27;OTR Blue&#x27;, 8: &#x27;OTR Green&#x27;, 9: &#x27;Team Lou Racing Squad&#x27;, 10: &#x27;Moon Riders&#x27;, 11: &#x27;Pocomotion&#x27;, 12: &#x27;KISS Racing Team 1&#x27;, 13: &#x27;OTR Black&#x27;, 14: &#x27;Rasio Racing&#x27;, 15: &#x27;The Pedalers&#x27;, 16: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"3579","type":"FuncTickFormatter"},{"attributes":{"text":"MRETT24"},"id":"3547","type":"Title"},{"attributes":{},"id":"3549","type":"DataRange1d"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3571","type":"BoxAnnotation"},{"attributes":{"range":{"id":"3551"}},"id":"3581","type":"Dodge"},{"attributes":{},"id":"3555","type":"LinearScale"},{"attributes":{},"id":"3551","type":"DataRange1d"},{"attributes":{},"id":"3553","type":"LinearScale"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3585"}],"tooltips":"&lt;h2&gt; #@{#} \\n                                @{Team Name} &lt;/h2&gt;\\n                                &lt;h3&gt; Time: @{Time} &lt;/h3&gt;"},"id":"3598","type":"HoverTool"},{"attributes":{"data_source":{"id":"3545"},"glyph":{"id":"3583"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3584"},"view":{"id":"3586"}},"id":"3585","type":"GlyphRenderer"},{"attributes":{"axis_label":"Time (Minutes)","formatter":{"id":"3590"},"major_label_policy":{"id":"3591"},"ticker":{"id":"3558"}},"id":"3557","type":"LinearAxis"},{"attributes":{},"id":"3558","type":"BasicTicker"},{"attributes":{"axis":{"id":"3557"},"ticker":null},"id":"3560","type":"Grid"},{"attributes":{},"id":"3566","type":"WheelZoomTool"},{"attributes":{"axis_label":"Team","formatter":{"id":"3579"},"major_label_policy":{"id":"3588"},"ticker":{"id":"3600"}},"id":"3561","type":"LinearAxis"},{"attributes":{"axis":{"id":"3561"},"dimension":1,"ticker":null},"id":"3564","type":"Grid"},{"attributes":{"label":{"value":" Time in Minutes"},"renderers":[{"id":"3585"}]},"id":"3597","type":"LegendItem"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"3565"},{"id":"3566"},{"id":"3567"},{"id":"3568"},{"id":"3569"},{"id":"3570"},{"id":"3598"}]},"id":"3572","type":"Toolbar"},{"attributes":{},"id":"3590","type":"BasicTickFormatter"},{"attributes":{},"id":"3570","type":"HelpTool"},{"attributes":{},"id":"3565","type":"PanTool"},{"attributes":{"data":{"#":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4fwAAAAAAAC5AAAAAAAAALEAAAAAAAAAqQAAAAAAAAChAAAAAAAAAJkAAAAAAAAAkQAAAAAAAACJAAAAAAAAAIEAAAAAAAAAcQAAAAAAAABhAAAAAAAAAFEAAAAAAAAAQQAAAAAAAAAhAAAAAAAAAAEAAAAAAAADwPw==","dtype":"float64","order":"little","shape":[17]},"Team Name":["RGT France 1","Les Watts","Westerlies","WKG Renegades","Team Lou Too","eCKD 2","Westerley CC Purple","OTR Blue","OTR Green","Team Lou Racing Squad","Moon Riders","Pocomotion","KISS Racing Team 1","OTR Black","Rasio Racing","The Pedalers","eCKD 1"],"Time":["NaN","NaN","00:41:45.4","00:40:29.7","00:40:26.5","00:38:24.3","00:37:18.4","00:35:58.4","00:35:34.1","00:35:31.8","00:35:25.4","00:35:06.8","00:34:30.3","00:34:23.5","00:33:32.0","00:33:08.4","00:33:04.5"],"Time in Minutes":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4f0GnDXTa4ERAkML1KFw/RECJiIiIiDhEQKRwPQrXM0NApw102kCnQkD9YskvlvxBQFnyiyW/yEFApHA9CtfDQUCW/GLJL7ZBQE8b6LSBjkFAcT0K16NAQUAiIiIiIjJBQEVERERExEBAUrgeheuRQECamZmZmYlAQA==","dtype":"float64","order":"little","shape":[17]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"__x__values_original":["RGT France 1","Les Watts","Westerlies","WKG Renegades","Team Lou Too","eCKD 2","Westerley CC Purple","OTR Blue","OTR Green","Team Lou Racing Squad","Moon Riders","Pocomotion","KISS Racing Team 1","OTR Black","Rasio Racing","The Pedalers","eCKD 1"]},"selected":{"id":"3594"},"selection_policy":{"id":"3595"}},"id":"3545","type":"ColumnDataSource"},{"attributes":{"overlay":{"id":"3571"}},"id":"3567","type":"BoxZoomTool"},{"attributes":{},"id":"3591","type":"AllLabels"},{"attributes":{},"id":"3568","type":"SaveTool"},{"attributes":{},"id":"3569","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3581"}}},"id":"3583","type":"HBar"}],"root_ids":["3546"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"6f491117-97a2-48e2-bd56-0c4ffe9aa104","root_ids":["3546"],"roots":{"3546":"4f75705b-273a-4adc-b1b2-21c5fd7845bb"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Time</th>
+      <th>Diff</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1.0</td>
+      <td>00:33:04.5</td>
+      <td>NaN</td>
+      <td>200.0</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>2.0</td>
+      <td>00:33:08.4</td>
+      <td>+ 0:00:03.9</td>
+      <td>190.0</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>3.0</td>
+      <td>00:33:32.0</td>
+      <td>+ 0:00:27.5</td>
+      <td>180.0</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>4.0</td>
+      <td>00:34:23.5</td>
+      <td>+ 0:01:19.0</td>
+      <td>175.0</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>5.0</td>
+      <td>00:34:30.3</td>
+      <td>+ 0:01:25.8</td>
+      <td>170.0</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>6.0</td>
+      <td>00:35:06.8</td>
+      <td>+ 0:02:02.3</td>
+      <td>165.0</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>7.0</td>
+      <td>00:35:25.4</td>
+      <td>+ 0:02:20.9</td>
+      <td>160.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>8.0</td>
+      <td>00:35:31.8</td>
+      <td>+ 0:02:27.3</td>
+      <td>155.0</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>9.0</td>
+      <td>00:35:34.1</td>
+      <td>+ 0:02:29.6</td>
+      <td>150.0</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>10.0</td>
+      <td>00:35:58.4</td>
+      <td>+ 0:02:53.9</td>
+      <td>145.0</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>11.0</td>
+      <td>00:37:18.4</td>
+      <td>+ 0:04:13.9</td>
+      <td>141.0</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>12.0</td>
+      <td>00:38:24.3</td>
+      <td>+ 0:05:19.8</td>
+      <td>137.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Too</th>
+      <td>13.0</td>
+      <td>00:40:26.5</td>
+      <td>+ 0:07:22.0</td>
+      <td>133.0</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>14.0</td>
+      <td>00:40:29.7</td>
+      <td>+ 0:07:25.2</td>
+      <td>129.0</td>
+    </tr>
+    <tr>
+      <th>Westerlies</th>
+      <td>15.0</td>
+      <td>00:41:45.4</td>
+      <td>+ 0:08:40.9</td>
+      <td>125.0</td>
+    </tr>
+    <tr>
+      <th>Les Watts</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>RGT France 1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><hr><h2>MRETT25</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="e90b8be0-56f2-4d50-a3e2-c86142adab7a" data-root-id="3671"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"787c543c-f200-44cc-85b6-ef9980047917":{"defs":[],"roots":{"references":[{"attributes":{"source":{"id":"3670"}},"id":"3711","type":"CDSView"},{"attributes":{"label":{"value":" Time in Minutes"},"renderers":[{"id":"3710"}]},"id":"3722","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3706"}}},"id":"3709","type":"HBar"},{"attributes":{"click_policy":"hide","items":[{"id":"3722"}]},"id":"3721","type":"Legend"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]},"id":"3725","type":"FixedTicker"},{"attributes":{"data":{"#":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAAsQAAAAAAAACpAAAAAAAAAKEAAAAAAAAAmQAAAAAAAACRAAAAAAAAAIkAAAAAAAAAgQAAAAAAAABxAAAAAAAAAGEAAAAAAAAAUQAAAAAAAABBAAAAAAAAACEAAAAAAAAAAQAAAAAAAAPA/","dtype":"float64","order":"little","shape":[18]},"Team Name":["WKG Renegades","Tricky Allsorts","RGT France 1","Les Watts","Westerlies","Team Lou Too","Westerley CC Purple","eCKD 2","Team Lou Racing Squad","OTR Blue","OTR Green","OTR Black","KISS Racing Team 1","Moon Riders","Pocomotion","The Pedalers","Rasio Racing","eCKD 1"],"Time":["NaN","NaN","NaN","NaN","00:44:01.3","00:42:26.0","00:40:03.9","00:38:02.6","00:36:55.0","00:36:47.8","00:36:21.3","00:35:43.7","00:35:43.3","00:35:31.3","00:35:18.1","00:34:52.7","00:34:23.8","00:33:52.8"],"Time in Minutes":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H+TXyz5xQJGQHd3d3d3N0VAuR6F61EIREAmv1jyiwVDQFVVVVVVdUJAxpJfLPllQkA+CtejcC1CQG6g0wY63UFALfnFkl/cQUCTXyz5xcJBQDbQaQOdpkFAodMGOm1wQUCTXyz5xTJBQHE9Ctej8EBA","dtype":"float64","order":"little","shape":[18]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],"__x__values_original":["WKG Renegades","Tricky Allsorts","RGT France 1","Les Watts","Westerlies","Team Lou Too","Westerley CC Purple","eCKD 2","Team Lou Racing Squad","OTR Blue","OTR Green","OTR Black","KISS Racing Team 1","Moon Riders","Pocomotion","The Pedalers","Rasio Racing","eCKD 1"]},"selected":{"id":"3719"},"selection_policy":{"id":"3720"}},"id":"3670","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"3670"},"glyph":{"id":"3708"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3709"},"view":{"id":"3711"}},"id":"3710","type":"GlyphRenderer"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3710"}],"tooltips":"&lt;h2&gt; #@{#} \\n                                @{Team Name} &lt;/h2&gt;\\n                                &lt;h3&gt; Time: @{Time} &lt;/h3&gt;"},"id":"3723","type":"HoverTool"},{"attributes":{},"id":"3680","type":"LinearScale"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;WKG Renegades&#x27;, 1: &#x27;Tricky Allsorts&#x27;, 2: &#x27;RGT France 1&#x27;, 3: &#x27;Les Watts&#x27;, 4: &#x27;Westerlies&#x27;, 5: &#x27;Team Lou Too&#x27;, 6: &#x27;Westerley CC Purple&#x27;, 7: &#x27;eCKD 2&#x27;, 8: &#x27;Team Lou Racing Squad&#x27;, 9: &#x27;OTR Blue&#x27;, 10: &#x27;OTR Green&#x27;, 11: &#x27;OTR Black&#x27;, 12: &#x27;KISS Racing Team 1&#x27;, 13: &#x27;Moon Riders&#x27;, 14: &#x27;Pocomotion&#x27;, 15: &#x27;The Pedalers&#x27;, 16: &#x27;Rasio Racing&#x27;, 17: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"3704","type":"FuncTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3696","type":"BoxAnnotation"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3706"}}},"id":"3708","type":"HBar"},{"attributes":{"text":"MRETT25"},"id":"3672","type":"Title"},{"attributes":{},"id":"3713","type":"AllLabels"},{"attributes":{},"id":"3674","type":"DataRange1d"},{"attributes":{"axis_label":"Time (Minutes)","formatter":{"id":"3715"},"major_label_policy":{"id":"3716"},"ticker":{"id":"3683"}},"id":"3682","type":"LinearAxis"},{"attributes":{},"id":"3683","type":"BasicTicker"},{"attributes":{"range":{"id":"3676"}},"id":"3706","type":"Dodge"},{"attributes":{"axis":{"id":"3682"},"ticker":null},"id":"3685","type":"Grid"},{"attributes":{},"id":"3678","type":"LinearScale"},{"attributes":{},"id":"3691","type":"WheelZoomTool"},{"attributes":{},"id":"3715","type":"BasicTickFormatter"},{"attributes":{},"id":"3676","type":"DataRange1d"},{"attributes":{"axis_label":"Team","formatter":{"id":"3704"},"major_label_policy":{"id":"3713"},"ticker":{"id":"3725"}},"id":"3686","type":"LinearAxis"},{"attributes":{"below":[{"id":"3682"}],"center":[{"id":"3685"},{"id":"3689"},{"id":"3721"}],"left":[{"id":"3686"}],"output_backend":"webgl","renderers":[{"id":"3710"}],"sizing_mode":"scale_width","title":{"id":"3672"},"toolbar":{"id":"3697"},"width":1600,"x_range":{"id":"3674"},"x_scale":{"id":"3678"},"y_range":{"id":"3676"},"y_scale":{"id":"3680"}},"id":"3671","subtype":"Figure","type":"Plot"},{"attributes":{"axis":{"id":"3686"},"dimension":1,"ticker":null},"id":"3689","type":"Grid"},{"attributes":{},"id":"3716","type":"AllLabels"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"3690"},{"id":"3691"},{"id":"3692"},{"id":"3693"},{"id":"3694"},{"id":"3695"},{"id":"3723"}]},"id":"3697","type":"Toolbar"},{"attributes":{},"id":"3695","type":"HelpTool"},{"attributes":{},"id":"3690","type":"PanTool"},{"attributes":{},"id":"3719","type":"Selection"},{"attributes":{"overlay":{"id":"3696"}},"id":"3692","type":"BoxZoomTool"},{"attributes":{},"id":"3720","type":"UnionRenderers"},{"attributes":{},"id":"3693","type":"SaveTool"},{"attributes":{},"id":"3694","type":"ResetTool"}],"root_ids":["3671"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"787c543c-f200-44cc-85b6-ef9980047917","root_ids":["3671"],"roots":{"3671":"e90b8be0-56f2-4d50-a3e2-c86142adab7a"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Time</th>
+      <th>Diff</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1.0</td>
+      <td>00:33:52.8</td>
+      <td>NaN</td>
+      <td>200.0</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>2.0</td>
+      <td>00:34:23.8</td>
+      <td>+ 0:00:31.0</td>
+      <td>190.0</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>3.0</td>
+      <td>00:34:52.7</td>
+      <td>+ 0:00:59.9</td>
+      <td>180.0</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>4.0</td>
+      <td>00:35:18.1</td>
+      <td>+ 0:01:25.3</td>
+      <td>175.0</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>5.0</td>
+      <td>00:35:31.3</td>
+      <td>+ 0:01:38.5</td>
+      <td>170.0</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>6.0</td>
+      <td>00:35:43.3</td>
+      <td>+ 0:01:50.5</td>
+      <td>165.0</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>7.0</td>
+      <td>00:35:43.7</td>
+      <td>+ 0:01:50.9</td>
+      <td>160.0</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>8.0</td>
+      <td>00:36:21.3</td>
+      <td>+ 0:02:28.5</td>
+      <td>155.0</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>9.0</td>
+      <td>00:36:47.8</td>
+      <td>+ 0:02:55.0</td>
+      <td>150.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>10.0</td>
+      <td>00:36:55.0</td>
+      <td>+ 0:03:02.2</td>
+      <td>145.0</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>11.0</td>
+      <td>00:38:02.6</td>
+      <td>+ 0:04:09.8</td>
+      <td>141.0</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>12.0</td>
+      <td>00:40:03.9</td>
+      <td>+ 0:06:11.1</td>
+      <td>137.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Too</th>
+      <td>13.0</td>
+      <td>00:42:26.0</td>
+      <td>+ 0:08:33.2</td>
+      <td>133.0</td>
+    </tr>
+    <tr>
+      <th>Westerlies</th>
+      <td>14.0</td>
+      <td>00:44:01.3</td>
+      <td>+ 0:10:08.5</td>
+      <td>129.0</td>
+    </tr>
+    <tr>
+      <th>Les Watts</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>RGT France 1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Tricky Allsorts</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table><hr><h2>MRETT26</h2><script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.1.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.1.min.js"></script>
+
+
+
+<div class="bk-root" id="ab85b25d-543a-43e8-a32a-d0340be9f48c" data-root-id="3796"></div>
+
+
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"b7ccbb81-9cd1-4952-a54f-22fe92d89dec":{"defs":[],"roots":{"references":[{"attributes":{"source":{"id":"3795"}},"id":"3836","type":"CDSView"},{"attributes":{},"id":"3805","type":"LinearScale"},{"attributes":{"axis":{"id":"3811"},"dimension":1,"ticker":null},"id":"3814","type":"Grid"},{"attributes":{},"id":"3815","type":"PanTool"},{"attributes":{"active_multi":null,"active_scroll":null,"tools":[{"id":"3815"},{"id":"3816"},{"id":"3817"},{"id":"3818"},{"id":"3819"},{"id":"3820"},{"id":"3848"}]},"id":"3822","type":"Toolbar"},{"attributes":{"axis":{"id":"3807"},"ticker":null},"id":"3810","type":"Grid"},{"attributes":{"code":"\\n                                    var labels = {0: &#x27;WKG Renegades&#x27;, 1: &#x27;Westerlies&#x27;, 2: &#x27;Tricky Allsorts&#x27;, 3: &#x27;RGT France 1&#x27;, 4: &#x27;Les Watts&#x27;, 5: &#x27;KISS Racing Team 1&#x27;, 6: &#x27;Team Lou Too&#x27;, 7: &#x27;eCKD 2&#x27;, 8: &#x27;Westerley CC Purple&#x27;, 9: &#x27;Team Lou Racing Squad&#x27;, 10: &#x27;OTR Blue&#x27;, 11: &#x27;OTR Green&#x27;, 12: &#x27;Moon Riders&#x27;, 13: &#x27;Pocomotion&#x27;, 14: &#x27;OTR Black&#x27;, 15: &#x27;Rasio Racing&#x27;, 16: &#x27;The Pedalers&#x27;, 17: &#x27;eCKD 1&#x27;};\\n                                    return labels[tick];\\n                                    "},"id":"3829","type":"FuncTickFormatter"},{"attributes":{"click_policy":"hide","items":[{"id":"3847"}]},"id":"3846","type":"Legend"},{"attributes":{"label":{"value":" Time in Minutes"},"renderers":[{"id":"3835"}]},"id":"3847","type":"LegendItem"},{"attributes":{"data_source":{"id":"3795"},"glyph":{"id":"3833"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3834"},"view":{"id":"3836"}},"id":"3835","type":"GlyphRenderer"},{"attributes":{},"id":"3820","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.6},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3831"}}},"id":"3833","type":"HBar"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3821","type":"BoxAnnotation"},{"attributes":{},"id":"3840","type":"BasicTickFormatter"},{"attributes":{"text":"MRETT26"},"id":"3797","type":"Title"},{"attributes":{"data":{"#":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAAKEAAAAAAAAAmQAAAAAAAACRAAAAAAAAAIkAAAAAAAAAgQAAAAAAAABxAAAAAAAAAGEAAAAAAAAAUQAAAAAAAABBAAAAAAAAACEAAAAAAAAAAQAAAAAAAAPA/","dtype":"float64","order":"little","shape":[18]},"Team Name":["WKG Renegades","Westerlies","Tricky Allsorts","RGT France 1","Les Watts","KISS Racing Team 1","Team Lou Too","eCKD 2","Westerley CC Purple","Team Lou Racing Squad","OTR Blue","OTR Green","Moon Riders","Pocomotion","OTR Black","Rasio Racing","The Pedalers","eCKD 1"],"Time":["NaN","NaN","NaN","NaN","NaN","NaN","00:40:29.7","00:37:34.4","00:37:23.9","00:37:20.9","00:35:58.4","00:35:50.5","00:35:22.1","00:34:42.3","00:33:58.1","00:33:40.1","00:33:04.8","00:32:57.6"],"Time in Minutes":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/kML1KFw/REDKL5b8YslCQGPJL5b8skJA/WLJL5asQkD9YskvlvxBQLy7u7u760FAv1jyiyWvQUAL16NwPVpBQIwlv1jy+0BAJr9Y8ovVQEAL16NwPYpAQHsUrkfhekBA","dtype":"float64","order":"little","shape":[18]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],"__x__values_original":["WKG Renegades","Westerlies","Tricky Allsorts","RGT France 1","Les Watts","KISS Racing Team 1","Team Lou Too","eCKD 2","Westerley CC Purple","Team Lou Racing Squad","OTR Blue","OTR Green","Moon Riders","Pocomotion","OTR Black","Rasio Racing","The Pedalers","eCKD 1"]},"selected":{"id":"3844"},"selection_policy":{"id":"3845"}},"id":"3795","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"3807"}],"center":[{"id":"3810"},{"id":"3814"},{"id":"3846"}],"left":[{"id":"3811"}],"output_backend":"webgl","renderers":[{"id":"3835"}],"sizing_mode":"scale_width","title":{"id":"3797"},"toolbar":{"id":"3822"},"width":1600,"x_range":{"id":"3799"},"x_scale":{"id":"3803"},"y_range":{"id":"3801"},"y_scale":{"id":"3805"}},"id":"3796","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3819","type":"ResetTool"},{"attributes":{"overlay":{"id":"3821"}},"id":"3817","type":"BoxZoomTool"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]},"id":"3850","type":"FixedTicker"},{"attributes":{},"id":"3808","type":"BasicTicker"},{"attributes":{},"id":"3816","type":"WheelZoomTool"},{"attributes":{},"id":"3838","type":"AllLabels"},{"attributes":{},"id":"3844","type":"Selection"},{"attributes":{"axis_label":"Team","formatter":{"id":"3829"},"major_label_policy":{"id":"3838"},"ticker":{"id":"3850"}},"id":"3811","type":"LinearAxis"},{"attributes":{},"id":"3803","type":"LinearScale"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3835"}],"tooltips":"&lt;h2&gt; #@{#} \\n                                @{Team Name} &lt;/h2&gt;\\n                                &lt;h3&gt; Time: @{Time} &lt;/h3&gt;"},"id":"3848","type":"HoverTool"},{"attributes":{},"id":"3841","type":"AllLabels"},{"attributes":{},"id":"3818","type":"SaveTool"},{"attributes":{},"id":"3801","type":"DataRange1d"},{"attributes":{},"id":"3799","type":"DataRange1d"},{"attributes":{},"id":"3845","type":"UnionRenderers"},{"attributes":{"range":{"id":"3801"}},"id":"3831","type":"Dodge"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Time in Minutes"},"y":{"field":"__x__values","transform":{"id":"3831"}}},"id":"3834","type":"HBar"},{"attributes":{"axis_label":"Time (Minutes)","formatter":{"id":"3840"},"major_label_policy":{"id":"3841"},"ticker":{"id":"3808"}},"id":"3807","type":"LinearAxis"}],"root_ids":["3796"]},"title":"Bokeh Application","version":"2.3.1"}}';
+                var render_items = [{"docid":"b7ccbb81-9cd1-4952-a54f-22fe92d89dec","root_ids":["3796"],"roots":{"3796":"ab85b25d-543a-43e8-a32a-d0340be9f48c"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script><table border="0" class="dataframe uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#</th>
+      <th>Time</th>
+      <th>Diff</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <th>Team</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eCKD 1</th>
+      <td>1.0</td>
+      <td>00:32:57.6</td>
+      <td>NaN</td>
+      <td>200.0</td>
+    </tr>
+    <tr>
+      <th>The Pedalers</th>
+      <td>2.0</td>
+      <td>00:33:04.8</td>
+      <td>+ 0:00:07.2</td>
+      <td>190.0</td>
+    </tr>
+    <tr>
+      <th>Rasio Racing</th>
+      <td>3.0</td>
+      <td>00:33:40.1</td>
+      <td>+ 0:00:42.5</td>
+      <td>180.0</td>
+    </tr>
+    <tr>
+      <th>OTR Black</th>
+      <td>4.0</td>
+      <td>00:33:58.1</td>
+      <td>+ 0:01:00.5</td>
+      <td>175.0</td>
+    </tr>
+    <tr>
+      <th>Pocomotion</th>
+      <td>5.0</td>
+      <td>00:34:42.3</td>
+      <td>NaN</td>
+      <td>170.0</td>
+    </tr>
+    <tr>
+      <th>Moon Riders</th>
+      <td>6.0</td>
+      <td>00:35:22.1</td>
+      <td>NaN</td>
+      <td>165.0</td>
+    </tr>
+    <tr>
+      <th>OTR Green</th>
+      <td>7.0</td>
+      <td>00:35:50.5</td>
+      <td>NaN</td>
+      <td>160.0</td>
+    </tr>
+    <tr>
+      <th>OTR Blue</th>
+      <td>8.0</td>
+      <td>00:35:58.4</td>
+      <td>NaN</td>
+      <td>155.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Racing Squad</th>
+      <td>9.0</td>
+      <td>00:37:20.9</td>
+      <td>NaN</td>
+      <td>150.0</td>
+    </tr>
+    <tr>
+      <th>Westerley CC Purple</th>
+      <td>10.0</td>
+      <td>00:37:23.9</td>
+      <td>NaN</td>
+      <td>145.0</td>
+    </tr>
+    <tr>
+      <th>eCKD 2</th>
+      <td>11.0</td>
+      <td>00:37:34.4</td>
+      <td>NaN</td>
+      <td>141.0</td>
+    </tr>
+    <tr>
+      <th>Team Lou Too</th>
+      <td>12.0</td>
+      <td>00:40:29.7</td>
+      <td>NaN</td>
+      <td>137.0</td>
+    </tr>
+    <tr>
+      <th>KISS Racing Team 1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Les Watts</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>RGT France 1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Tricky Allsorts</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Westerlies</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>WKG Renegades</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table></body></html>
